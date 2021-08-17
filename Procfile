@@ -1,0 +1,1 @@
+web: gunicorn interprofile.wsgi --log-file -
