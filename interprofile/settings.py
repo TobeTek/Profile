@@ -17,7 +17,7 @@ import django_heroku
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 # load_dotenv()
-django_heroku.settings(locals())
+# django_heroku.settings(locals())
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/3.2/howto/deployment/checklist/
 
@@ -133,11 +133,11 @@ USE_TZ = True
 STATIC_URL = '/static/'
 STATICFILES_DIRS= [os.path.join(BASE_DIR,'static')]
 STATIC_ROOT = BASE_DIR / 'staticfiles'
-STATIC_TMP = os.path.join(BASE_DIR, 'static')
+# STATIC_TMP = os.path.join(BASE_DIR, 'static')
 STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 
-os.makedirs(STATIC_TMP, exist_ok=True)
-os.makedirs(STATIC_ROOT, exist_ok=True)
+# os.makedirs(STATIC_TMP, exist_ok=True)
+# os.makedirs(STATIC_ROOT, exist_ok=True)
 
 LOGIN_REDIRECT_URL = 'home'
 LOGOUT_REDIRECT_URL = 'home'
